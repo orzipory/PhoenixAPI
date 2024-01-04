@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixAPI", "PhoenixAPI\PhoenixAPI.csproj", "{D8F0A59D-9D78-434F-9295-AB1EF422997F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixBL", "PhoenixBL\PhoenixBL.csproj", "{640CC698-8EB2-423A-AB69-1EB977018FB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8F0A59D-9D78-434F-9295-AB1EF422997F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F0A59D-9D78-434F-9295-AB1EF422997F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F0A59D-9D78-434F-9295-AB1EF422997F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F0A59D-9D78-434F-9295-AB1EF422997F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640CC698-8EB2-423A-AB69-1EB977018FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640CC698-8EB2-423A-AB69-1EB977018FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640CC698-8EB2-423A-AB69-1EB977018FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640CC698-8EB2-423A-AB69-1EB977018FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9C0DA80-D5EF-4F96-B87E-A75CF8B56A3D}
+	EndGlobalSection
+EndGlobal
