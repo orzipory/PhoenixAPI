@@ -11,24 +11,18 @@ namespace PhoenixBL
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        public List<IRepository>? getRepositoryByName(string text)
+        public List<IRepository>? GetRepositoryByName(string text)
         {
             try
             {
                 List<IRepository> list = new List<IRepository>();
                 string url = "https://api.github.com/search/repositories?q=" + text;
-                //using var client = new HttpClient();
-                //HttpResponseMessage result = await client.GetAsync("https://api.github.com/search/repositories?q=" + text);
-                //String responceContent = await result.Content.ReadAsStringAsync();
-                //Root data = JsonConvert.DeserializeObject<Root>(responceContent);
 
                 using (WebClient wb = new WebClient())
                 {
                     wb.Headers.Add("user-agent", "Only a test!");
                     string result = wb.DownloadString(url);
                     Root? data = JsonConvert.DeserializeObject<Root>(result);
-
-
 
                     foreach (var item in data!.items!)
                     {

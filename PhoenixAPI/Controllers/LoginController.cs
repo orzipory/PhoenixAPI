@@ -25,7 +25,7 @@ namespace PhoenixAPI.Controllers
             var loginResponse = new LoginResponse { };
             LoginRequest loginrequest = new()
             {
-                UserName = login.UserName.ToLower(),
+                Username = login.Username.ToLower(),
                 Password = login.Password
             };
 
@@ -39,7 +39,7 @@ namespace PhoenixAPI.Controllers
             // if credentials are valid
             if (isUsernamePasswordValid)
             {
-                string token = CreateToken(loginrequest.UserName);
+                string token = CreateToken(loginrequest.Username);
 
                 loginResponse.Token = token;
                 loginResponse.responseMsg = new HttpResponseMessage()
